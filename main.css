@@ -1,0 +1,89 @@
+.ml-auto{
+    margin-left: auto;
+}
+
+.home h1{
+    text-transform: uppercase;
+}
+
+.home p{
+    margin-top: 10px;
+    font-size: 20pt;
+}
+.home{
+    color: white;
+    background-image: url("src/home-bg.jpg");
+    background-size: 100%; 
+}
+
+.center-vertical{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-me{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+    color: black;   
+}
+
+.home-content{
+    text-align: center;
+}
+
+.about-me h2{
+    text-transform: uppercase;
+}
+
+.about-me p{
+    font-size: 13pt;
+}
+
+.projects{
+    background: black;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.projects h2{
+    text-transform: uppercase;
+}
+
+.projects p{
+    font-size: 13pt;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-brand{
+    padding-left: 15px;
+}
+
+.navbar-nav{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.underconst{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+.underconst h1{
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    color: white;
+}
