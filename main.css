@@ -3,15 +3,17 @@
 }
 
 .home h1{
+    color: white;
     text-transform: uppercase;
+    letter-spacing: 20px;
 }
 
 .home p{
+    letter-spacing: 2px;
     margin-top: 10px;
-    font-size: 20pt;
+    font-size: 18pt;
 }
 .home{
-    color: white;
     background-image: url("src/home-bg.jpg");
     background-size: 100%; 
 }
@@ -25,12 +27,43 @@
 .about-me{
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: white;
-    color: black;   
+    background-color: black;
+    color: white;   
 }
 
 .home-content{
     text-align: center;
+}
+
+.home-button{
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.home-button a{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    color: black;
+    background: white;
+    text-align: center;
+    width: 150px;
+    font-weight: 500;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    text-transform: uppercase;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px;
+}
+
+.home-button a:hover{
+    opacity: 0.7;
 }
 
 .about-me h2{
@@ -56,6 +89,7 @@
 }
 
 .navbar{
+    display: none;
     position: fixed;
     top: 0;
     width: 100%;
@@ -87,3 +121,31 @@
     letter-spacing: 20px;
     color: white;
 }
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+
+.fa a:hover{
+    
+    text-decoration: none;
+}
+.fa{
+    margin: 10px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: #000;
+    background: white;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    color: black;
+    text-decoration: none;
+    opacity: 0.7;
+  }

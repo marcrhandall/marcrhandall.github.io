@@ -1,18 +1,9 @@
-var underconst = true;
 $(document).ready(function(){
-    if(underconst){
-       $(".underconst") $(window).height(); 
-    } else{
-        resizeHome();
-    }
+    resizeHome();
 });
 
 $(window).resize(function() {
-    if(underconst){
-
-    } else{
-        resizeHome();
-    }
+    resizeHome();
  });
 
  function resizeHome(){
@@ -33,7 +24,9 @@ $(window).resize(function() {
     if($(window).scrollTop() == 0) {
          navbar.css("background-color","rgba(0,0,0,0.0)");
          navbar.height(80);
+         navbar.hide();
     } else{
+        navbar.show();
         navbar.css("background-color","#000");
         navbar.height("auto");
     }
