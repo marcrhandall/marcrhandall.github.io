@@ -9,16 +9,12 @@ $(document).ready(function(){
     
           // Store hash
           var hash = this.hash;
-    
+          var scrollTo = $(hash).offset().top - 50;
           // Using jQuery's animate() method to add smooth page scroll
           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-    
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
+            scrollTop: scrollTo
+          }, 800, null);
         } // End if
       });
     
@@ -35,21 +31,19 @@ $(window).resize(function() {
     home = $(".home-container");
     if(homeContentSize<windowSize){
         home.height(windowSize);
-    } else{
-        home.css('margin-top',50);
-        home.css('margin-bottom',50);
-    }
+    } 
  }
 
  $(document).scroll(function() { 
     navbar = $(".navbar");
     if($(window).scrollTop() == 0) {
          navbar.css("background-color","rgba(0,0,0,0.0)");
-         navbar.height(80);
+         navbar.height(50);
          navbar.hide();
     } else{
+        navbar.height(50);
         navbar.show();
-        navbar.css("background-color","#000");
+        navbar.css("background-color","#fff");
         navbar.height("auto");
     }
  });
