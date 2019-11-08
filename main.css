@@ -5,7 +5,6 @@
 .home h1{
     color: white;
     text-transform: uppercase;
-    letter-spacing: 20px;
 }
 
 .home p{
@@ -34,7 +33,7 @@
 }
 
 .home-content{
-    text-align: center;
+    text-align: left;
 }
 
 .home-button{
